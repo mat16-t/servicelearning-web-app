@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, {useEffect} from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './i18n'; // Import i18n config
 import Header from './components/Header';
@@ -17,15 +17,14 @@ const TitleUpdater = () => {
 
   useEffect(() => {
     const titles = {
-      "/": "Home - [Your School's Name]",
-      "/about": "About Us - [Your School's Name]",
-      "/contact": "Contact Us - [Your School's Name]",
-      "/gallery": "Gallery - [Your School's Name]",
-      "/admission": "Admissions - [Your School's Name]",
-      "/service-learning": "Service Learning - [Your School's Name]", // New Page
+      "/": "St.Gregorios Public School",
+      "/about": "St.Gregorios Public School - About",
+      "/contact": "St.Gregorios Public School - Contact",
+      "/gallery": "St.Gregorios Public School - Gallery",
+      "/admission": "St.Gregorios Public School - Admission",
     };
 
-    document.title = titles[location.pathname] || "[Your School's Name]";
+    document.title = titles[location.pathname] || "St.Gregorios Public School";
   }, [location]);
 
   return null;
