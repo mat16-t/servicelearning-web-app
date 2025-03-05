@@ -12,6 +12,25 @@ import Admission from './components/Admission';
 import './App.css';
 import './animations.css';
 
+const TitleUpdater = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const titles = {
+      "/": "Home - [Your School's Name]",
+      "/about": "About Us - [Your School's Name]",
+      "/contact": "Contact Us - [Your School's Name]",
+      "/gallery": "Gallery - [Your School's Name]",
+      "/admission": "Admissions - [Your School's Name]",
+      "/service-learning": "Service Learning - [Your School's Name]", // New Page
+    };
+
+    document.title = titles[location.pathname] || "[Your School's Name]";
+  }, [location]);
+
+  return null;
+};
+
 const App = () => {
   const { i18n } = useTranslation();
 
@@ -22,6 +41,7 @@ const App = () => {
 
   return (
     <Router>
+      <TitleUpdater />
       <div className="App">
         <Header />
         {/* <div className="text-right p-4">
