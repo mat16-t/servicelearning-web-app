@@ -1,0 +1,40 @@
+/* App.css */
+html, body {
+  overflow-x: hidden;
+  align-items: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(60deg, #ffffff, #c3e9f1); */
+  color: black;
+}
+
+header {
+  /* background-color: white; */
+  padding: 1rem;
+  color: black;
+  /* text-align: center; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+}
+
+nav a {
+  color: black;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+main {
+  /* padding: 2rem; */
+  min-height: 80vh;
+  color: black;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 1rem;
+  color: black;
+  text-align: center;
+}
