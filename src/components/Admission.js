@@ -18,7 +18,7 @@ const Admission = () => {
       <div className="w-full max-w-3xl bg-white p-4 rounded-lg shadow-lg">
         <iframe
           title="Admission Form"
-          src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSf9JYmNJ0AmnQZ0kTTHgufY5rjPCEmNyZErF763ne52DyBXtQ/viewform?usp=dialog"
           width="100%"
           height="600px"
           frameBorder="0"
