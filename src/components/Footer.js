@@ -10,7 +10,7 @@ const Footer = () => {
           <h4 className="text-lg font-semibold">St.Gregorious School</h4>
           <p>📍 #109, Bheemanaguppe Cross, Bengaluru - 74, Karnataka, India</p>
           <p>&#x1F4DE; +91 8147988604 <br></br>+91 8147988605</p>
-          <p>&#x2709;info@gregoriousschool.com</p>
+          <p>&#x2709;stgregoriosschoolkengeri@gmail.com</p>
         </div>
 
         {/* Middle Section: Mission & Vision */}
