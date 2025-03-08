@@ -4,8 +4,8 @@ const Contact = () => {
   return (
     <div className="py-16 bg-gray-100 text-center">
       <h2 className="text-4xl font-bold text-blue-900">Contact Us</h2>
-      <p className="mt-4 text-lg">Address: St. Gregorios Public School, New Delhi</p>
-      <p>Email: info@sgpschool.com | Phone: +91 9876543210</p>
+      <p className="mt-4 text-lg">Address: #109, Bheemanaguppe Cross, Bengaluru - 74, Karnataka, India</p>
+      <p>Email: stgregoriosschoolkengeri@gmail.com | Phone: +91 8147988604 | +91 8147988605</p>
       
       {/* Google Map */}
       <div className="mt-8 flex justify-center">
