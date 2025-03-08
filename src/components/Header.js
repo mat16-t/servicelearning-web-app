@@ -13,7 +13,7 @@ const Header = () => {
 
   // List of pages for search
   const pages = [
-    { name: t("Home"), path: "/" },
+    { name: t("Home"), path: "/home" },
     { name: t("About"), path: "/about" },
     { name: t("Gallery"), path: "/gallery" },
     { name: t("Contact"), path: "/contact" },
