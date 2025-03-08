@@ -17,7 +17,7 @@ const TitleUpdater = () => {
 
   useEffect(() => {
     const titles = {
-      "/": "St.Gregorios Public School",
+      "/home": "St.Gregorios Public School",
       "/about": "St.Gregorios Public School - About",
       "/contact": "St.Gregorios Public School - Contact",
       "/gallery": "St.Gregorios Public School - Gallery",
