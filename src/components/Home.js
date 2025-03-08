@@ -44,8 +44,8 @@ const Home = () => {
           <motion.h1 className="text-5xl font-bold" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.5 }}>
             {t("Welcome to St. Gregorios Public School")}
           </motion.h1>
-          <motion.p className="mt-4 text-lg font-light max-w-2xl" initial={{ y: 30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 1 }}>
-            {t("Providing quality education with strong moral values.")}
+          <motion.p className="mt-4 text-lg font-light max-w-2xl tracking-widest" initial={{ y: 30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 1 }}>
+            {t("Care • Compassion • Truth")}
           </motion.p>
         </div>
       </motion.div>

@@ -1,18 +1,22 @@
-// src/components/Contact.js
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
 
 const Contact = () => {
   return (
-    <motion.div
-      initial={{ y: 20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      className="slide-up"
-    >
-      <h2>Contact Us</h2>
-      <p>This page provides contact information.</p>
-    </motion.div>
+    <div className="py-16 bg-gray-100 text-center">
+      <h2 className="text-4xl font-bold text-blue-900">Contact Us</h2>
+      <p className="mt-4 text-lg">Address: St. Gregorios Public School, New Delhi</p>
+      <p>Email: info@sgpschool.com | Phone: +91 9876543210</p>
+      
+      {/* Google Map */}
+      <div className="mt-8 flex justify-center">
+        <iframe
+          title="Google Maps"
+          className="w-full h-96 max-w-5xl border-4 border-blue-900 rounded-lg shadow-lg"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1401.8984326617185!2d77.43399020037516!3d12.897588881282967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f5.1!3m3!1m2!1s0x3bae38f225bb9bcb%3A0x269233b784aca008!2sSt.%20Gregorios%20Public%20School!5e0!3m2!1sen!2sin!4v1731263520967!5m2!1sen!2sin"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
   );
 };
 
