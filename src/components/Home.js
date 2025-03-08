@@ -27,9 +27,11 @@ const Home = () => {
   };
 
   const images = [
-    { src: "/images/sl1.jpg", alt: "Gallery Image 1" },
+    { src: "/images/sl.jpg", alt: "Gallery Image 1" },
     { src: "/images/sl2.jpg", alt: "Gallery Image 2" },
     { src: "/images/sl3.jpg", alt: "Gallery Image 3" },
+    { src: "/images/sl4.jpg", alt: "Gallery Image 4" },
+    { src: "/images/sl5.jpg", alt: "Gallery Image 5" }
   ];
 
   return (
