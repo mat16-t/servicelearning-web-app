@@ -17,7 +17,7 @@ const TitleUpdater = () => {
 
   useEffect(() => {
     const titles = {
-      "/home": "St.Gregorios Public School",
+      "/": "St.Gregorios Public School",
       "/about": "St.Gregorios Public School - About",
       "/contact": "St.Gregorios Public School - Contact",
       "/gallery": "St.Gregorios Public School - Gallery",
@@ -49,7 +49,7 @@ const App = () => {
         </div> */}
         <main>
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/gallery" element={<Gallery />} />
