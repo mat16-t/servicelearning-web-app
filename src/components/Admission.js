@@ -6,7 +6,7 @@ const Admission = () => {
 
   return (
     <section className="py-16 bg-gray-100 min-h-screen flex flex-col items-center">
-      <h2 className="w-3/4 text-4xl font-bold text-center mb-8 text-black bg-blue-400 rounded-md py-5 mt-20">
+      <h2 className="w-3/4 text-4xl font-bold text-center mb-8 text-black bg-blue-900 rounded-md py-5 mt-20">
         {t("Admission Form")}
       </h2>
       {/* Google Form Embed */}
