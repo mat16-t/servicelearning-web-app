@@ -126,7 +126,7 @@ const NextArrow = ({ onClick }) => (
           <div className="w-full md:w-1/2 text-center">
             <img src="/images/school-img2.jpg" alt="School" className="w-full h-64 object-cover rounded-lg shadow-md" />
             <h3 className="text-2xl font-bold text-gray-800 mt-4">{t("Our School")}</h3>
-            <p className="text-gray-700 mt-2 px-5">{t("St. Gregorios Public School is dedicated to academic excellence and moral development, ensuring students grow into responsible global citizens.")}
+            <p className="text-gray-700 mt-2 px-6">{t("St. Gregorios Public School is dedicated to academic excellence and moral development, ensuring students grow into responsible global citizens.")}
             </p>
           </div>
 
