@@ -10,6 +10,26 @@ const Home = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
+// ✅ Custom Previous Arrow
+const PrevArrow = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="absolute left-1 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-400 p-3 rounded-full shadow-lg hover:bg-gray-600 transition z-20"
+  >
+    ◀
+  </button>
+);
+
+// ✅ Custom Next Arrow
+const NextArrow = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-400 p-3 rounded-full shadow-lg hover:bg-gray-600 transition"
+  >
+    ▶
+  </button>
+);
+
   // Carousel Settings
   const settings = {
     // dots: true,
@@ -19,7 +39,8 @@ const Home = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
-    pauseOnHover: true,
+    nextArrow: <NextArrow />,  // ✅ Add Next Button
+    prevArrow: <PrevArrow />,
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 2 } },
       { breakpoint: 768, settings: { slidesToShow: 1 } },
@@ -37,7 +58,11 @@ const Home = () => {
     { src: "/images/sl8.jpg", alt: "Gallery Image 8" },
     { src: "/images/sl9.jpg", alt: "Gallery Image 9" },
     { src: "/images/sl10.jpg", alt: "Gallery Image 10" },
-    { src: "/images/sl11.jpg", alt: "Gallery Image 11" }
+    { src: "/images/sl11.jpg", alt: "Gallery Image 11" },
+    { src: "/images/sl12.jpg", alt: "Gallery Image 8" },
+    { src: "/images/sl13.jpg", alt: "Gallery Image 9" }
+    // { src: "/images/sl10.jpg", alt: "Gallery Image 10" },
+    // { src: "/images/sl11.jpg", alt: "Gallery Image 11" }
   ];
 
   return (
@@ -85,7 +110,7 @@ const Home = () => {
           {/* 📌 Headmaster */}
           <div className="w-full md:w-1/2 text-center">
             <img src="/images/headmaster.jpg" alt="Headmaster" className="w-65 h-65 mx-auto rounded-20 shadow-md" />
-            <h3 className="text-2xl font-bold text-gray-800 mt-4">{t("Headmaster")}</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mt-4">{t("Headmistress")}</h3>
             <p className="text-gray-700 mt-2 px-6">
               {t("We believe in a balanced education that nurtures both intellectual curiosity and character development.")}
             </p>
@@ -99,10 +124,9 @@ const Home = () => {
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           {/* 📌 School Section */}
           <div className="w-full md:w-1/2 text-center">
-            <img src="/images/school-img.jpg" alt="School" className="w-full h-64 object-cover rounded-lg shadow-md" />
+            <img src="/images/school-img2.jpg" alt="School" className="w-full h-64 object-cover rounded-lg shadow-md" />
             <h3 className="text-2xl font-bold text-gray-800 mt-4">{t("Our School")}</h3>
-            <p className="text-gray-700 mt-2 px-6">
-              {t("St. Gregorios Public School is dedicated to academic excellence and moral development, ensuring students grow into responsible global citizens.")}
+            <p className="text-gray-700 mt-2 px-6">{t("St. Gregorios Public School is dedicated to academic excellence and moral development, ensuring students grow into responsible global citizens.")}
             </p>
           </div>
 
@@ -119,7 +143,7 @@ const Home = () => {
       {/* ✅ Image Carousel (Gallery) */}
       <motion.div className="py-16 bg-gray-100 w-3/4 mx-auto rounded-lg shadow-lg" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
         <h2 className="text-4xl font-bold text-center mb-8 text-white bg-blue-900 rounded-md py-5">{t("Gallery")}</h2>
-        <div className="max-w-6xl mx-auto">
+        <div className="relative max-w-6xl mx-auto">
           <Slider {...settings}>
             {images.map((image, index) => (
               <div key={index} onClick={() => navigate("/gallery")} className="cursor-pointer px-3 transition-transform duration-300 hover:scale-105">

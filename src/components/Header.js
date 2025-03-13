@@ -17,7 +17,7 @@ const Header = () => {
     { name: t("About"), path: "/about" },
     { name: t("Gallery"), path: "/gallery" },
     { name: t("Contact"), path: "/contact" },
-    { name: t("Admission"), path: "/admission" },
+    { name: t("Admission"), path: "/admission" }
   ];
 
   // Detect scroll and update navbar
@@ -68,22 +68,22 @@ const Header = () => {
     >
       {/* 🔹 Left Section: School Name */}
       <motion.div
-        className={`text-xl md:text-3xl font-bold transition-all duration-300 ease-in-out
+        className={`text-xl md:text-3xl font-bold transition-all duration-300 ease-in-out flex items-center
           ${isScrolled ? "text-black" : "text-white"}
         `}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <img src="/images/school-logo.jpg" alt="School Logo" className="w-12 h-12 object-contain rounded-20" />
+        <img src="/images/school-logo.jpg" alt="School Logo" className="w-14 h-14 object-contain rounded-20" />
         {t("St. Gregorious Public School")}
       </motion.div>
 
       {/* 🔹 Center Section: Navigation */}
-      <nav className="hidden md:flex space-x-6 transition-all duration-500 ease-in-out">
+      <nav className="hidden md:flex items-center space-x-6 transition-all duration-500 ease-in-out">
         {pages.map((page) => (
           <motion.a
-            key={page.path}
+            key={page.path}  // ✅ Unique key for each item
             href={page.path}
             className={`${isScrolled ? "text-black" : "text-white"} hover:text-blue-600`}
             whileHover={{ scale: 1.1 }}
@@ -92,7 +92,13 @@ const Header = () => {
             {page.name}
           </motion.a>
         ))}
+
+        {/* ✅ Language Toggle Button (Works Now) */}
+        <button onClick={toggleLanguage} className={`${isScrolled ? "text-black" : "text-white"} py-2 hover:text-blue-600`}>
+          {t("ಅನುವಾದಿಸಿ")}
+        </button>
       </nav>
+
 
       {/* 🔹 Right Section: Search & Mobile Menu */}
       <div className="flex items-center space-x-3">
