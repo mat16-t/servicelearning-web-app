@@ -12,7 +12,7 @@ const Home = () => {
 
   // Carousel Settings
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 600,
     slidesToShow: 3,
@@ -31,7 +31,13 @@ const Home = () => {
     { src: "/images/sl2.jpg", alt: "Gallery Image 2" },
     { src: "/images/sl3.jpg", alt: "Gallery Image 3" },
     { src: "/images/sl4.jpg", alt: "Gallery Image 4" },
-    { src: "/images/sl5.jpg", alt: "Gallery Image 5" }
+    { src: "/images/sl5.jpg", alt: "Gallery Image 5" },
+    { src: "/images/sl6.jpg", alt: "Gallery Image 6" },
+    { src: "/images/sl7.jpg", alt: "Gallery Image 7" },
+    { src: "/images/sl8.jpg", alt: "Gallery Image 8" },
+    { src: "/images/sl9.jpg", alt: "Gallery Image 9" },
+    { src: "/images/sl10.jpg", alt: "Gallery Image 10" },
+    { src: "/images/sl11.jpg", alt: "Gallery Image 11" }
   ];
 
   return (
@@ -63,43 +69,53 @@ const Home = () => {
         </div>
       </motion.div>
 
-      {/* ✅ Vision & Mission Section */}
-      <motion.div className="py-16 bg-gradient-to-b from-blue-900 to-blue-600 w-3/4 mx-auto rounded-lg shadow-lg" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-        <h2 className="text-4xl font-bold text-center mb-8 text-white  rounded-md py-4">{t("Our Vision & Mission")}</h2>
-        <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-2xl text-white font-semibold mb-4">{t("Our Motto")}</h3>
-          <p className="text-white mb-6">{t("vision_text")}</p>
-          <h3 className="text-2xl text-white font-semibold mb-4">{t("Our Focus")}</h3>
-          <p className="text-white">{t("mission_text")}</p>
-        </div>
-      </motion.div>
-
-      {/* ✅ About & History Section */}
+      {/* ✅ Principal & Headmaster Section */}
       <motion.div className="py-16 bg-gray-100 w-3/4 mx-auto rounded-lg shadow-lg" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-        <h2 className="text-4xl font-bold text-center mb-8 text-white bg-blue-900 rounded-md py-4">{t("Our History")}</h2>
-        <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto px-4">
-          <div className="md:w-1/2">
-            <img src="/images/school-img.jpg" alt="School" className="rounded-lg shadow-lg w-full h-auto" />
+        <h2 className="text-4xl font-bold text-center mb-8 text-white bg-blue-900 rounded-md py-4">{t("Our Leadership")}</h2>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+          {/* 📌 Principal */}
+          <div className="w-full md:w-1/2 text-center">
+            <img src="/images/principal.jpg" alt="Principal" className="w-65 h-65 mx-auto rounded-20 shadow-md" />
+            <h3 className="text-2xl font-bold text-gray-800 mt-4">{t("Principal")}</h3>
+            <p className="text-gray-700 mt-2 px-6">
+              {t("We aim to create an environment where students thrive academically and morally.")}
+            </p>
           </div>
-          <div className="md:w-1/2 mt-8 md:mt-0 md:pl-12">
-            <p className="text-gray-700">{t("history_text")}</p>
+
+          {/* 📌 Headmaster */}
+          <div className="w-full md:w-1/2 text-center">
+            <img src="/images/headmaster.jpg" alt="Headmaster" className="w-65 h-65 mx-auto rounded-20 shadow-md" />
+            <h3 className="text-2xl font-bold text-gray-800 mt-4">{t("Headmaster")}</h3>
+            <p className="text-gray-700 mt-2 px-6">
+              {t("We believe in a balanced education that nurtures both intellectual curiosity and character development.")}
+            </p>
           </div>
         </div>
       </motion.div>
 
-      {/* ✅ Church Section */}
+      {/* ✅ School & Church Section */}
       <motion.div className="py-16 bg-white w-3/4 mx-auto rounded-lg shadow-lg" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-        <h2 className="text-4xl font-bold text-center mb-8 text-white bg-blue-900 rounded-md py-4">{t("Our Church")}</h2>
-        <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto px-4">
-          <div className="md:w-1/2">
-            <p className="text-gray-700">{t("church_text")}</p>
+        <h2 className="text-4xl font-bold text-center mb-8 text-white bg-blue-900 rounded-md py-4">{t("Our School & Church")}</h2>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+          {/* 📌 School Section */}
+          <div className="w-full md:w-1/2 text-center">
+            <img src="/images/school-img.jpg" alt="School" className="w-full h-64 object-cover rounded-lg shadow-md" />
+            <h3 className="text-2xl font-bold text-gray-800 mt-4">{t("Our School")}</h3>
+            <p className="text-gray-700 mt-2 px-6">
+              {t("St. Gregorios Public School is dedicated to academic excellence and moral development, ensuring students grow into responsible global citizens.")}
+            </p>
           </div>
-          <div className="md:w-1/2 mt-8 md:mt-0 md:pl-12">
-            <img src="/images/church.jpg" alt="Church" className="rounded-lg shadow-lg w-full h-auto" />
+
+          {/* 📌 Church Section */}
+          <div className="w-full md:w-1/2 text-center">
+            <img src="/images/church.jpg" alt="Church" className="w-full h-64 object-cover rounded-lg shadow-md" />
+            <h3 className="text-2xl font-bold text-gray-800 mt-4">{t("Our Church")}</h3>
+            <p className="text-gray-700 mt-2 px-6">
+              {t("The St. Gregorios Orthodox Cathedral, under the Diocese of St. Gregorios, plays a key role in fostering spiritual growth and community values.")}
+            </p>
           </div>
         </div>
       </motion.div>
-
       {/* ✅ Image Carousel (Gallery) */}
       <motion.div className="py-16 bg-gray-100 w-3/4 mx-auto rounded-lg shadow-lg" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
         <h2 className="text-4xl font-bold text-center mb-8 text-white bg-blue-900 rounded-md py-5">{t("Gallery")}</h2>

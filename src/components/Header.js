@@ -75,7 +75,7 @@ const Header = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <img src="/images/school-logo.jpg" alt="School Logo" className="w-12 h-12 object-contain" />
+        <img src="/images/school-logo.jpg" alt="School Logo" className="w-12 h-12 object-contain rounded-20" />
         {t("St. Gregorious Public School")}
       </motion.div>
 

@@ -9,6 +9,12 @@ const Gallery = () => {
     { id: 4, src: "/images/sl4.jpg", alt: "Image 4", title: "Title 4" },
     { id: 5, src: "/images/sl2.jpg", alt: "Image 5", title: "Title 5" },
     { id: 6, src: "/images/sl5.jpg", alt: "Image 6", title: "Title 6" },
+    { id: 2, src: "/images/sl6.jpg", alt: "Image 2", title: "Title 2" },
+    { id: 3, src: "/images/sl7.jpg", alt: "Image 3", title: "Title 3" },
+    { id: 4, src: "/images/sl8.jpg", alt: "Image 4", title: "Title 4" },
+    { id: 5, src: "/images/sl9.jpg", alt: "Image 5", title: "Title 5" },
+    { id: 6, src: "/images/sl10.jpg", alt: "Image 6", title: "Title 6" },
+    { id: 6, src: "/images/sl11.jpg", alt: "Image 6", title: "Title 6" }
   ];
 
   return (
