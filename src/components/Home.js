@@ -107,7 +107,7 @@ const NextArrow = ({ onClick }) => (
             </p>
           </div>
 
-          {/* 📌 Headmaster */}
+          {/* Headmaster */}
           <div className="w-full md:w-1/2 text-center">
             <img src="/images/headmaster.jpg" alt="Headmaster" className="w-65 h-65 mx-auto rounded-20 shadow-md" />
             <h3 className="text-2xl font-bold text-gray-800 mt-4">{t("Headmistress")}</h3>
@@ -122,7 +122,7 @@ const NextArrow = ({ onClick }) => (
       <motion.div className="py-16 bg-white w-3/4 mx-auto rounded-lg shadow-lg" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
         <h2 className="text-4xl font-bold text-center mb-8 text-white bg-blue-900 rounded-md py-4">{t("Our School & Church")}</h2>
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
-          {/* 📌 School Section */}
+          {/* School Section */}
           <div className="w-full md:w-1/2 text-center">
             <img src="/images/school-img2.jpg" alt="School" className="w-full h-64 object-cover rounded-lg shadow-md" />
             <h3 className="text-2xl font-bold text-gray-800 mt-4">{t("Our School")}</h3>
@@ -130,7 +130,7 @@ const NextArrow = ({ onClick }) => (
             </p>
           </div>
 
-          {/* 📌 Church Section */}
+          {/* Church Section */}
           <div className="w-full md:w-1/2 text-center">
             <img src="/images/church.jpg" alt="Church" className="w-full h-64 object-cover rounded-lg shadow-md" />
             <h3 className="text-2xl font-bold text-gray-800 mt-4">{t("Our Church")}</h3>
@@ -140,7 +140,7 @@ const NextArrow = ({ onClick }) => (
           </div>
         </div>
       </motion.div>
-      {/* ✅ Image Carousel (Gallery) */}
+      {/* Image Carousel (Gallery) */}
       <motion.div className="py-16 bg-gray-100 w-3/4 mx-auto rounded-lg shadow-lg" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
         <h2 className="text-4xl font-bold text-center mb-8 text-white bg-blue-900 rounded-md py-5">{t("Gallery")}</h2>
         <div className="relative max-w-6xl mx-auto">

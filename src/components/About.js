@@ -49,15 +49,15 @@ const About = () => {
           <div className="w-full md:w-1/2 mt-6 md:mt-0 md:mr-8">
             <h2 className="text-3xl font-bold text-gray-800">About Our Church</h2>
             <p className="mt-4 text-gray-600">
-              The **St. Gregorious Orthodox Cathedral** is a beacon of faith and tradition, 
-              playing an integral role in the **spiritual and moral guidance** of our school. 
-              As part of the esteemed **Diocese of St. Gregorios**, our church fosters values 
-              of **faith, service, and community engagement** among students and families.
+              The St. Gregorious Orthodox Cathedral is a beacon of faith and tradition, 
+              playing an integral role in the spiritual and moral guidance of our school. 
+              As part of the esteemed Diocese of St. Gregorios, our church fosters values 
+              of faith, service, and community engagement among students and families.
             </p>
             <p className="mt-4 text-gray-600">
-              Rooted in rich Orthodox traditions, our church provides students with **spiritual 
-              growth opportunities**, ensuring that they develop into **compassionate and 
-              responsible individuals** who contribute positively to society.
+              Rooted in rich Orthodox traditions, our church provides students with spiritual 
+              growth opportunities, ensuring that they develop into compassionate and 
+              responsible individuals who contribute positively to society.
             </p>
           </div>
         </div>
